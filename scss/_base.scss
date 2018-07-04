@@ -6,12 +6,14 @@ body {
 }
 
 .live-pic {
-	max-width: 80vw;
-	max-height: calc(100vh - 200px);
+	max-width: 100%;
+	
 	margin: 0 auto;
-	padding-top: 20px;
+	padding: 5vh 0 3vh;
+	text-align: center;
 	img {
-		width: 100%;
+		width: auto;
 		height: auto;
+		max-height: calc(100vh - 16vw - 10vh - 10vh);
 	}
 }
