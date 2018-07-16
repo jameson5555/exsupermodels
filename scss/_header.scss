@@ -2,19 +2,4 @@ header {
 	color: $pink;
 	text-align: center;
 	padding: 3vh 0 0;
-	h1 {
-		font: normal 15vw/20vw $logo-font;
-		@media (min-width: $tablet) {
-			font-size: 10vw;
-			line-height: 12vw;
-		}
-		@media (min-width: $desktop) {
-			font-size: 8vw;
-			line-height: 10vw;
-		}
-		@media (min-width: $desktop-lg) {
-			font-size: 6vw;
-			line-height: 10vw;
-		}
-	}
 }

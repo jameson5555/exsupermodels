@@ -2,18 +2,66 @@
 html,
 body {
 	background: $black;
-	//font: 
+	font: normal 1vw/2vw $base-font;
 }
 
-.live-pic {
+.main-pic {
 	max-width: 100%;
-	
 	margin: 0 auto;
-	padding: 5vh 0 3vh;
+	padding: 5vh 0 1vh;
 	text-align: center;
 	img {
 		width: auto;
 		height: auto;
-		max-height: calc(100vh - 16vw - 10vh - 10vh);
+		max-height: $main-pic-height;
+		transition: max-height 0.3s ease-out;
+	}
+}
+
+h1 {
+	font: normal 15vw/20vw $logo-font;
+	@media (min-width: $tablet) {
+		font-size: 10vw;
+		line-height: 12vw;
+	}
+	@media (min-width: $desktop) {
+		font-size: 8vw;
+		line-height: 10vw;
+	}
+	@media (min-width: $desktop-lg) {
+		font-size: 6vw;
+		line-height: 10vw;
+	}
+}
+
+h2 {
+	font: normal 10vw/15vw $logo-font;
+	color: #fff;
+	text-align: center;
+	margin-bottom: 1vw;
+	@media (min-width: $tablet) {
+		font-size: 7vw;
+		line-height: 9vw;
+	}
+	@media (min-width: $desktop) {
+		font-size: 5vw;
+		line-height: 7vw;
+	}
+	@media (min-width: $desktop-lg) {
+		font-size: 3vw;
+		line-height: 5vw;
+	}
+}
+
+a {
+	color: $pink;
+	font-weight: bold;
+	text-decoration: none;
+	opacity: 0.8;
+	transition: opacity 0.3s ease-out;
+	&:hover,
+	&:active {
+		color: $pink;
+		opacity: 1;
 	}
 }

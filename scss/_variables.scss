@@ -5,9 +5,13 @@ $pink: #fd83fd;
 $gray: #666;
 
 // fonts
-$logo-font: 'mr_dafoeregular';
+$logo-font: "mr_dafoeregular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$base-font: "Helvetica Neue", Helvetica, Arial, sans-serif;
 
 // breakpoints
 $tablet: 640px;
 $desktop: 1000px;
 $desktop-lg: 1300px;
+
+// sizes
+$main-pic-height: calc(100vh - 16vw - 10vh - 10vh);

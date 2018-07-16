@@ -1,0 +1,71 @@
+
+.events__list {
+	max-width: 90vw;
+	margin: 0 auto;
+	margin-bottom: 3vh;
+	@media (min-width: $tablet) {
+		max-width: 75vw;
+	}
+	@media (min-width: $desktop) {
+		max-width: 50vw;
+	}
+}
+
+.card {
+	color: #fff;
+	list-style-type: none;
+	border: 1px solid rgba($pink, 0.8);
+	@include clear;
+	margin-bottom: 10px;
+	&__image {
+		float: left;
+		width: 33.3333%;
+		border-right: 1px solid rgba($pink, 0.8);
+		display: block;
+		overflow: hidden;
+		img {
+			width: 100%;
+			vertical-align: top;
+		}
+	}
+	&__body {
+		text-align: left;
+		padding: 1vw;
+		margin-left: calc(33.3333% - 1px);
+		border-left: 1px solid rgba($pink, 0.8);
+	}
+	&__title {
+		text-transform: uppercase;
+		font-weight: bold;
+		font-size: 4vw;
+		line-height: 5vw;
+		@media (min-width: $tablet) {
+			font-size: 3vw;
+			line-height: 4vw;
+		}
+		@media (min-width: $desktop) {
+			font-size: 2vw;
+			line-height: 3vw;
+		}
+		@media (min-width: $desktop-lg) {
+			font-size: 1vw;
+			line-height: 2vw;
+		}
+	}
+	&__subtitle {
+		font-size: 3vw;
+		line-height: 4vw;
+		@media (min-width: $tablet) {
+			font-size: 2vw;
+			line-height: 3vw;
+		}
+		@media (min-width: $desktop) {
+			font-size: 1vw;
+			line-height: 2vw;
+		}
+		@media (min-width: $desktop) {
+			font-size: 0.7vw;
+			line-height: 1vw;
+		}
+	}
+}
