@@ -16,6 +16,9 @@ body {
 		max-height: $main-pic-height;
 		transition: max-height 0.3s ease-out;
 	}
+	iframe {
+		max-width: 100%;
+	}
 }
 
 h1 {
