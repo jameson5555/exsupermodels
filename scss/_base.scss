@@ -3,12 +3,19 @@ html,
 body {
 	background: $black;
 	font: normal 1vw/2vw $base-font;
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	background: $black url(/images/catwalk.jpg) no-repeat center;
+	background-size: cover;
 }
 
 .main-pic {
 	max-width: 100%;
 	margin: 0 auto;
-	padding: 5vh 0 1vh;
+	padding: 5vh 1vw 1vh;
 	text-align: center;
 	img {
 		width: auto;
@@ -18,6 +25,7 @@ body {
 	}
 	iframe {
 		max-width: 100%;
+		box-shadow: 0 0 0px 3px $pink;
 	}
 }
 

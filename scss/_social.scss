@@ -2,7 +2,7 @@
 
 .social {
 	text-align: center;
-	padding: 1vh 0 3vh;
+	padding: 3vh 0 3vh;
 	&__icon {
 		display: inline-block;
 		width: 9vw;
@@ -23,8 +23,9 @@
 		}
 		a {
 			color: $gray;
-			opacity: 0.8;
-			transition: color 0.3s ease-out, opacity 0.5s ease-in;
+			color: $pink;
+			opacity: 0.7;
+			transition: opacity 0.3s ease-in;
 			&:hover {
 				opacity: 1;
 				color: $pink;
